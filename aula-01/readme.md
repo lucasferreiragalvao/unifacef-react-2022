@@ -39,7 +39,7 @@
 
 > Lembre-se que irémos usar como convenção sempre o padrão de nomeclatura de arquivos e pastas `kebab-case`
 
-Projeto Final disponível em: <https://github.com/juninmd/unifacef-react-typescript>
+Projeto Final disponível em: <https://github.com/juninmd/unifacef-react-typescript-2022>
 
 Vamos iniciar utilizando o comando
 
