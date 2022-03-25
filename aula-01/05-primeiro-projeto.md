@@ -1,5 +1,20 @@
 # Criando o projeto
 
+## Montando Ambiente
+
+Vamos fazer o download do NodeJS <https://nodejs.org/en/> de preferência a versão LTS.  (LTS é a versão estável).
+
+Para desenvolver nossos códigos, iremos utiizar o editor Visual Studio Code <https://code.visualstudio.com/>
+Ele é leve, possui um depurador integrado, extensões...
+
+Também iremos conhecer o NVM (Node Version Mananger), muito útil para quem necessita ter diversas versões do NodeJS instaladas na máquina.
+
+Linux/Mac: <https://github.com/creationix/nvm>
+
+Windows: <https://github.com/coreybutler/nvm-windows>
+
+---
+
 > Lembre-se que irémos usar como convenção sempre o padrão de nomeclatura de arquivos e pastas `kebab-case`
 
 Projeto Final disponível em: <https://github.com/juninmd/unifacef-react-typescript-2022>
@@ -818,3 +833,5 @@ export const endpoints: EndPointsProps[] = [
   { path: `${publicUrl}/sobre`, name: 'Sobre', component: Sobre, exact: true },
 ];
 ```
+
+[Voltar](../readme.MD)

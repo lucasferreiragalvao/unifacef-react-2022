@@ -3,9 +3,9 @@
 ## Ementa
 
 * Revisão dos Conceitos WEB
-  * Exercícios HTML
-  * Exercícios JavaScript + DOM
-  * Exercícios CSS
+  * Revisão Tecnologias WEb
+  * Exemplos HTML / JavaScript / CSS
+  * Apresentação das ferramentas
   * Criando primeiro Projeto
   * Configurando o projeto com novas bibliotecas
     * Axios
@@ -18,9 +18,10 @@
 ## Ordem
 
   1. [Revisão sobre tecnologias da WEB](./01-revisao.md)
-  2. [CRA](./02-tools.md)
-  3. [React](./03-react.md)
-  4. [Primeiro Projeto](./04-primeiro-projeto.md)
+  2. [JavaScript](./02-javascript.md)
+  3. [ReactJs](./03-react.md)
+  4. [Tools](./04-tools.md)
+  5. [Primeiro Projeto](./05-primeiro-projeto.md)
 
 ## Links úteis
 

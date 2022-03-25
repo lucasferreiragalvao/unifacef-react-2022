@@ -270,3 +270,6 @@ por exemplo, ter uma equipe trabalhando em um módulo X e outra num módulo Y, m
 É um gerenciador de estado bem simples, que se inspira no Angular.
 
 ![imagem](imagens/mobx.png)
+
+
+[Voltar](../readme.MD)
