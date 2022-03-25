@@ -537,4 +537,40 @@ async function getLista(qtd) {
 }
 ```
 
+## Valores monetários
+
+```javascript
+// Conversão de valor monetário;
+
+console.log(new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(5.32));
+```
+
+## Find
+```javascript
+let customers = [
+  { id: 0, name: 'paul' },
+  { id: 1, name: 'jeff' },
+  { id: 2, name: 'mary' }
+];
+
+let customer = customers.find(cust => cust.name === 'jeff');
+
+console.log(customer);
+// --> { id: 1, name: 'jeff' }
+
+```
+
+## Stringfy
+
+```javascript
+let obj = {
+    Name: 'Alwar',
+    Age: 23,
+    Degree: 'B.E(ECE)',
+    Hobbies: 'Working in Web Apps, Drawing, Playing cricket,'
+    Country: 'India'
+};
+JSON.stringify(obj);
+```
+
 [Voltar](../readme.MD)
