@@ -1,6 +1,6 @@
 # Repositórios
 
-* [Alessandro Rodrigues da Silva]()
+* [Alessandro Rodrigues da Silva](https://github.com/alessandrorsilva/unifacef-react-typescript)
 * [Andre Luiz Gonçalves Silva](https://github.com/andrebetta123/unifacef-react-typescript)
 * [Anilton Francisco de Morais Junior]()
 * [Bruna Késsia Gonçalves](https://github.com/brugoncalves/unifacef-react-typescript)
