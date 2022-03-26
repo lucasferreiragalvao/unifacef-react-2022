@@ -63,37 +63,36 @@ Seu package.json deve ficar assim:
 ```json
 {
   "name": "unifacef-react-typescript",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sentry/browser": "^5.16.1",
-    "axios": "^0.19.2",
-    "history": "^4.10.1",
+    "@sentry/browser": "^6.19.2",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/history": "^5.0.0",
+    "@types/jest": "^27.4.1",
+    "@types/lodash": "^4.14.180",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@types/react-router-dom": "^5.3.3",
+    "axios": "^0.26.1",
+    "history": "^5.3.0",
     "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.15",
-    "mobx": "^5.15.4",
-    "mobx-react": "^6.2.2",
+    "lodash": "^4.17.21",
+    "mobx": "^6.5.0",
+    "mobx-react": "^7.3.0",
     "mobx-react-router": "^4.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.2",
-    "sweetalert2": "^9.14.0"
-  },
-  "devDependencies": {
-    "@types/react-router-dom": "^5.1.5",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/history": "^4.7.6",
-    "@types/jest": "^24.0.0",
-    "@types/lodash": "^4.14.155",
-    "@types/node": "^14.0.11",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "semantic-ui-react": "^2.1.2",
+    "sweetalert2": "^11.4.7",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -102,7 +101,75 @@ Seu package.json deve ficar assim:
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+```
+
+Vamos separar as dependências do projeto das que são de dev das quais não são.
+
+```
+{
+  "name": "unifacef-react-typescript",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@sentry/browser": "^6.19.2",
+    "axios": "^0.26.1",
+    "history": "^5.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mobx": "^6.5.0",
+    "mobx-react": "^7.3.0",
+    "mobx-react-router": "^4.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.1.2",
+    "sweetalert2": "^11.4.7",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/history": "^5.0.0",
+    "@types/jest": "^27.4.1",
+    "@types/lodash": "^4.14.180",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@types/react-router-dom": "^5.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
