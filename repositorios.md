@@ -4,7 +4,7 @@
 * [Andre Luiz Gonçalves Silva](https://github.com/andrebetta123/unifacef-react-typescript)
 * [Anilton Francisco de Morais Junior]()
 * [Bruna Késsia Gonçalves](https://github.com/brugoncalves/unifacef-react-typescript)
-* [David Stefani Prado]()
+* [David Stefani Prado](https://github.com/DavidPrado/posaulareact)
 * [Edmar Antonio da Costa Junior]()
 * [Hyan Kelwin Souza Campos](https://github.com/hyankelwin/reactjs-typescript-unifacef)
 * [João Marcos Rodrigues Stefani](https://github.com/JoaoStefani/unifacef-react-typescript)
