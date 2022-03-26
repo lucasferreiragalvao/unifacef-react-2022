@@ -88,7 +88,7 @@ E modifiquem o conteúdo em texto e deixem a página recarregar.
 Vamos agora adicionar novas dependencias aos projeto
 
 ```bash
-npm install react@16.8.0 react-dom@16.8.0 axios history@4.10.1 jsonwebtoken semantic-ui-css semantic-ui-react sweetalert2 @sentry/browser lodash mobx@5.0.0 mobx-react@6.2.2 mobx-react-router react-router-dom@5.3.0 sweetalert2 @types/react-router-dom@5.3.3 @types/history@4.7.6 @types/lodash @types/node
+npm install react@16.8.0 react-dom@16.8.0 axios history@4.10.1 jsonwebtoken semantic-ui-css semantic-ui-react sweetalert2 @sentry/browser lodash mobx-react@6.2.2 mobx@5.0.0 mobx-react-router react-router-dom@5.3.0 sweetalert2 @types/react-router-dom@5.3.3 @types/history@4.7.6 @types/lodash @types/node
 ```
 
 Ajustar dependencias no `package.json`, separar o que é dependência de desenvolvimento e de projeto.
