@@ -13,7 +13,7 @@
 * [Leonardo de Carvalho Neves]()
 * [Lucas Ferreira Galvão]()
 * [Lucas Lauro Costa]()
-* [Odair Pedroso Junior]()
+* [Odair Pedroso Junior](https://github.com/odair-pedroso/react-unifacef)
 * [Reinaldo de Paula Silveira]()
 * [Thaísa Honorio Morandini]()
 * [Thiago Henrique de Matos]()
