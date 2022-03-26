@@ -12,7 +12,7 @@
 * [Leonardo Carloni Rodrigues Meira]()
 * [Leonardo de Carvalho Neves]()
 * [Lucas Ferreira Galvão]()
-* [Lucas Lauro Costa]()
+* [Lucas Lauro Costa](https://github.com/LucasLauro96/react-facef)
 * [Odair Pedroso Junior]()
 * [Reinaldo de Paula Silveira]()
 * [Thaísa Honorio Morandini]()
