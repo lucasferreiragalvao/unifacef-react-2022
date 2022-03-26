@@ -10,7 +10,7 @@
 * [João Marcos Rodrigues Stefani]()
 * [Joyce Ribeiro]()
 * [Leonardo Carloni Rodrigues Meira]()
-* [Leonardo de Carvalho Neves]()
+- [Leonardo de Carvalho Neves](https://github.com/neves-c-leonardo/projeto-react-unifacef)
 * [Lucas Ferreira Galvão]()
 * [Lucas Lauro Costa]()
 * [Odair Pedroso Junior]()
