@@ -15,6 +15,6 @@
 * [Lucas Lauro Costa]()
 * [Odair Pedroso Junior]()
 * [Reinaldo de Paula Silveira]()
-* [Thaísa Honorio Morandini]()
+* [Thaísa Honorio Morandini](https://github.com/thaisamorandini89/unifacefreactapp)
 * [Thiago Henrique de Matos]()
 * [Vinicius Manso Carrijo]()
