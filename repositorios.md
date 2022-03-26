@@ -4,7 +4,7 @@
 * [Andre Luiz Gonçalves Silva]()
 * [Anilton Francisco de Morais Junior]()
 * [Bruna Késsia Gonçalves]()
-* [David Stefani Prado]()
+* [David Stefani Prado](https://github.com/DavidPrado/posaulareact)
 * [Edmar Antonio da Costa Junior]()
 * [Hyan Kelwin Souza Campos]()
 * [João Marcos Rodrigues Stefani]()
