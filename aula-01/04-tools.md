@@ -272,4 +272,4 @@ por exemplo, ter uma equipe trabalhando em um módulo X e outra num módulo Y, m
 ![imagem](imagens/mobx.png)
 
 
-[Voltar](../readme.MD)
+[Voltar](./readme.md)
