@@ -4,6 +4,7 @@
 * [Contato](./contato.md)
 * [Repositórios dos Alunos](./repositorios.md)
 * [Playground TypeScript](https://github.com/juninmd/typescript-unifacef)
+* [Projeto final](https://github.com/juninmd/unifacef-react-typescript-2022)
 
 ---
 

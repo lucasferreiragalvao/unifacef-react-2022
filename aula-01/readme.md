@@ -35,3 +35,4 @@
 * <https://github.com/juninmd/star-wars-api>
 * <https://app.netlify.com/>
 * <https://thisdavej.com/right-click-on-windows-folder-and-open-with-visual-studio-code/>
+* <http://json2ts.com/>
