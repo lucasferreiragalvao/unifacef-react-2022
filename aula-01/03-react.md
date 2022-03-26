@@ -326,4 +326,4 @@ class Clock extends React.Component {
 }
 ```
 
-[Voltar](../readme.MD)
+[Voltar](./readme.md)
