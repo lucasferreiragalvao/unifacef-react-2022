@@ -88,7 +88,7 @@ E modifiquem o conteúdo em texto e deixem a página recarregar.
 Vamos agora adicionar novas dependencias aos projeto
 
 ```bash
-npm install axios history@4.10.1 jsonwebtoken semantic-ui-css semantic-ui-react sweetalert2 @sentry/browser lodash mobx mobx-react mobx-react-router react-router-dom@5.3.0 sweetalert2 @types/react-router-dom@5.3.3 @types/history@4.7.6 @types/lodash @types/node
+npm install react@16.8.0 react-dom@16.8.0 axios history@4.10.1 jsonwebtoken semantic-ui-css semantic-ui-react sweetalert2 @sentry/browser lodash mobx@5.0.0 mobx-react@6.2.2 mobx-react-router react-router-dom@5.3.0 sweetalert2 @types/react-router-dom@5.3.3 @types/history@4.7.6 @types/lodash @types/node
 ```
 
 Ajustar dependencias no `package.json`, separar o que é dependência de desenvolvimento e de projeto.
@@ -116,11 +116,11 @@ Seu package.json deve ficar assim:
     "history": "^4.10.1",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
-    "mobx": "^6.5.0",
-    "mobx-react": "^7.3.0",
+    "mobx": "^5.0.0",
+    "mobx-react": "^6.2.2",
     "mobx-react-router": "^4.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.0",
     "semantic-ui-css": "^2.4.1",
@@ -169,11 +169,11 @@ Vamos separar as dependências do projeto das que são de dev das quais não sã
     "history": "^4.10.1",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
-    "mobx": "^6.5.0",
-    "mobx-react": "^7.3.0",
+    "mobx": "^5.0.0",
+    "mobx-react": "^6.2.2",
     "mobx-react-router": "^4.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.0",
     "semantic-ui-css": "^2.4.1",
