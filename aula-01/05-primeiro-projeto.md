@@ -19,6 +19,8 @@ Windows: <https://github.com/coreybutler/nvm-windows>
 
 Projeto Final disponível em: <https://github.com/juninmd/unifacef-react-typescript-2022>
 
+## Create React App
+
 Vamos iniciar utilizando o comando
 
 ```bash
@@ -31,11 +33,31 @@ Abra a pasta
 cd unifacef-react-typescript
 ```
 
+Para abrir o vs code direto
+
+```bash
+code .
+```
+
+## CSS
+
+Vamos utilizar nesse projeto como framework CSS o Semantic UI
+
+<https://react.semantic-ui.com/>
+
+Seus componentes são bem customizáveis
+
+---
+
+## Codificando
+
 Adcionar Título da página
 
 No arquivo
 
-> public/index.html
+```text
+./public/index.html
+```
 
 Vamos alterar o atributo do título para
 
@@ -43,17 +65,30 @@ Vamos alterar o atributo do título para
  <title>Unifacef React App</title>
 ```
 
+Aproveite e adicione a linha do css
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+```
+
+---
+
 Abra o arquivo
 
-> src/app.tsx
+```text
+./src/app.tsx
+```
 
 E modifiquem o conteúdo em texto e deixem a página recarregar.
 
+---
+
+## Dependências do projeto
 
 Vamos agora adicionar novas dependencias aos projeto
 
 ```bash
-yarn add axios history jsonwebtoken semantic-ui-css semantic-ui-react sweetalert2 @sentry/browser lodash mobx mobx-react mobx-react-router react-router-dom sweetalert2 @types/react-router-dom @types/history @types/lodash @types/node
+npm install axios history@4.10.1 jsonwebtoken semantic-ui-css semantic-ui-react sweetalert2 @sentry/browser lodash mobx mobx-react mobx-react-router react-router-dom@5.3.0 sweetalert2 @types/react-router-dom@5.3.3 @types/history@4.7.6 @types/lodash @types/node
 ```
 
 Ajustar dependencias no `package.json`, separar o que é dependência de desenvolvimento e de projeto.
@@ -70,7 +105,7 @@ Seu package.json deve ficar assim:
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "@types/history": "^5.0.0",
+    "@types/history": "^4.7.6",
     "@types/jest": "^27.4.1",
     "@types/lodash": "^4.14.180",
     "@types/node": "^17.0.23",
@@ -78,7 +113,7 @@ Seu package.json deve ficar assim:
     "@types/react-dom": "^17.0.14",
     "@types/react-router-dom": "^5.3.3",
     "axios": "^0.26.1",
-    "history": "^5.3.0",
+    "history": "^4.10.1",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "mobx": "^6.5.0",
@@ -86,7 +121,7 @@ Seu package.json deve ficar assim:
     "mobx-react-router": "^4.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.2",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.1.2",
@@ -131,7 +166,7 @@ Vamos separar as dependências do projeto das que são de dev das quais não sã
   "dependencies": {
     "@sentry/browser": "^6.19.2",
     "axios": "^0.26.1",
-    "history": "^5.3.0",
+    "history": "^4.10.1",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "mobx": "^6.5.0",
@@ -139,7 +174,7 @@ Vamos separar as dependências do projeto das que são de dev das quais não sã
     "mobx-react-router": "^4.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.2",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.1.2",
@@ -151,7 +186,7 @@ Vamos separar as dependências do projeto das que são de dev das quais não sã
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "@types/history": "^5.0.0",
+    "@types/history": "^4.7.6",
     "@types/jest": "^27.4.1",
     "@types/lodash": "^4.14.180",
     "@types/node": "^17.0.23",
@@ -186,61 +221,15 @@ Vamos separar as dependências do projeto das que são de dev das quais não sã
 }
 ```
 
-Vamos utilizar nesse projeto como framework CSS o Semantic UI
-
-<https://react.semantic-ui.com/>
-
-Seus componentes são bem customizáveis
-
 ---
 
-Após isso, crie uma conta na plataforma Sentry.
+## Configurando TypeScript
 
-<https://sentry.io/welcome/>
+Vamos configurar o arquivo
 
-Crie o projeto lá dentro, procue por `Client Keys`, copie o valor `DSN` e 
-anote a variável dentro de um arquivo .env e cole como `REACT_APP_SENTRY_DSN`.
-
-Altere o arquivo App.tsx
-
-```tsx
-import './App.css';
-
-import React from 'react';
-import logo from './logo.svg';
-
-function App() {
-
-  const methodDoesNotExist = () => {
-    throw new Error('ERRO')
-  }
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Vamos aprender React
-        </p>
-        <button onClick={methodDoesNotExist}>Break the world</button>;
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React é legal
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
-
+```text
+./tsconfig.json
 ```
-
-Vamos configurar o arquivo `tsconfig.json`
 
 ```json
 {
@@ -287,14 +276,219 @@ Vamos configurar o arquivo `tsconfig.json`
 }
 ```
 
+Vamos remover as variáveis não utilizadas
+
+como no arquivo
+
+```text
+./src/App.test.tsx
+```
+
+e
+
+```text
+./src/App.tsx
+```
+
+```jsx
+import React from 'react';
+```
+
+---
+Altere o arquivo
+
+```text
+./src/App.tsx
+```
+
+Vamos adicionar um botão para mostrar mensagem
+
+```tsx
+import './App.css';
+
+import logo from './logo.svg';
+
+function App() {
+
+  const showMessage = () => {
+    alert('Teste');
+  }
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Vamos aprender React
+        </p>
+        <button onClick={showMessage}>Break the world</button>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React é legal
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Clique no botão `Break the world` e verá um alerta na tela.
+
+---
+
+## Estruturando nosso projeto
+
 Vamos criar a seguinte árvore de pastas no projeto:
 
 ![imagem](./imagens/11.png)
 
+Crie o arquivo `router.store.tsx`
+dentro de mobx
+
+```text
+./src/mobx/router.store.tsx
+```
+
+```tsx
+import { RouterStore } from "mobx-react-router";
+import { action } from "mobx";
+
+export default class NewRouterStore extends RouterStore {
+
+  @action setHistory = (path: string) => {
+    this.history.push(path);
+  }
+}
+
+const router = new NewRouterStore();
+export { router };
+```
+
+Vamos criar nosso arquivo de endpoints da nossa aplicação. No começo ele irá estar vazio mesmo.
+
+```text
+./src/routes/endpoints.ts
+```
+
+```ts
+import { RouteProps } from 'react-router-dom';
+
+interface EndPointsProps extends RouteProps {
+  name?: string
+}
+
+export const endpoints: EndPointsProps[] = [];
+```
+
+---
+
+Crie um componente dentro de components, apartir de uma pasta chamada
+main-menu, adicione index.tsx
+
+```text
+./src/components/main-menu/index.tsx
+```
+
+```tsx
+import * as React from "react";
+
+import { inject, observer } from "mobx-react";
+
+import { Menu } from "semantic-ui-react";
+import NewRouterStore from "../../mobx/router.store";
+import { endpoints } from "../../routes/endpoints";
+
+interface Props {
+  router?: NewRouterStore;
+}
+
+@inject('router')
+@observer
+export default class MainMenu extends React.Component<Props> {
+
+  handleItemClick = (_, { url }: any) => {
+    const { setHistory } = this.props.router!;
+    return setHistory(url);
+  }
+
+  render() {
+    return (
+      <>
+        <div className='nav'>
+          <Menu color='blue' inverted={true} size='large' secondary={true} stackable={true}>
+            {endpoints.filter(x => x.name).map((item, index) => {
+              return <Menu.Item
+                key={index}
+                name={item.path?.toString()}
+                url={item.path!}
+                onClick={this.handleItemClick}>
+                {item.name}
+              </Menu.Item>
+            })}
+          </Menu>
+        </div>
+      </>
+    )
+  }
+}
+```
+
+Vamos agora apagar alguns arquivos:
+
+```text
+./src/App.css
+./src/App.tsx
+./src/App.test.tsx
+./src/reportWebVitals.ts
+```
+
+Agora vamos alterar o
+
+```text
+./src/index.tsx
+```
+
+```tsx
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import * as store from './mobx';
+import Routes from './routes';
+import { createBrowserHistory } from 'history';
+import { Provider } from 'mobx-react';
+import { router } from './mobx/';
+import { Router } from 'react-router-dom';
+import { syncHistoryWithStore } from 'mobx-react-router';
+import 'semantic-ui-css/semantic.min.css';
+
+const rootElement = document.getElementById('root');
+const browserHistory = createBrowserHistory();
+
+const history = syncHistoryWithStore(browserHistory, router);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider {...store}>
+      <Router history={history}>
+        <Routes />
+      </Router>
+    </Provider>
+  </React.StrictMode>,
+  rootElement
+);
+```
+
+---
+
 Dentro de apis crie o arquivo `economy.api.ts`
 
 ```text
-src/apis/economy.api.ts
+./src/apis/economy.api.ts
 ```
 
 Ficando assim:
@@ -339,7 +533,7 @@ export { home };
 ```
 
 ```text
-src/containers/home/index.tsx
+./src/containers/home/index.tsx
 ```
 
 Dentro da index, deixe assim:
@@ -400,9 +594,9 @@ export default class Home extends React.Component<Props> {
 }
 ```
 
-Crie uma nova pasta dentro de containers chamada sobre
+Crie uma nova pasta dentro de containers chamada `sobre`
 
-Adicione um arquivo index.tsx
+Adicione um arquivo index.tsx dentro dela
 
 ```text
 src/containers/sobre/index.tsx
@@ -462,16 +656,16 @@ export default class NotFound extends React.Component {
 }
 ```
 
-Dentro de routes crie dois arquivos
+Dentro de routes altere
 
 ```text
-endpoints.ts
+./src/routes/endpoints.ts
 ```
 
 ```ts
+import Home from '../containers/home';
 import { RouteProps } from 'react-router-dom';
 import Sobre from '../containers/sobre';
-import Home from '../containers/home';
 
 const publicUrl = process.env.PUBLIC_URL;
 
@@ -487,7 +681,7 @@ export const endpoints: EndPointsProps[] = [
 ```
 
 ```text
-index.tsx
+./src/routes/index.tsx
 ```
 
 ```tsx
@@ -499,6 +693,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import { Divider } from 'semantic-ui-react';
+import MainMenu from '../components/main-menu';
 import NotFound from '../containers/not-found';
 import { endpoints } from './endpoints';
 
@@ -510,6 +705,7 @@ export default class Routes extends React.Component {
   render() {
     return (
       <>
+        <MainMenu />
         <Divider hidden={true} />
         <Switch>
           {endpoints.map((route, i) => (
@@ -523,26 +719,12 @@ export default class Routes extends React.Component {
 }
 ```
 
-Crie o arquivo router.store.tsx
-dentro de mobx
-
-```tsx
-import { RouterStore } from "mobx-react-router";
-import { action } from "mobx";
-
-export default class NewRouterStore extends RouterStore {
-
-  @action setHistory = (path: string) => {
-    this.history.push(path);
-  }
-}
-
-const router = new NewRouterStore();
-export { router };
-```
-
 crie o arquivo index.ts
 dentro da pasta mobx
+
+```text
+./src/mobx/index.ts
+```
 
 ```tsx
 import { home } from '../containers/home/store';
@@ -554,53 +736,17 @@ export {
 }
 ```
 
-Crie um componente dentro de components, apartir de uma pasta chamada
-main-menu, adicione index.tsx
 
-```tsx
-import * as React from "react";
+---
 
-import { inject, observer } from "mobx-react";
+## Sentry
 
-import { Menu } from "semantic-ui-react";
-import NewRouterStore from "../../mobx/router.store";
-import { endpoints } from "../../routes/endpoints";
+Crie uma conta na plataforma Sentry.
 
-interface Props {
-  router?: NewRouterStore;
-}
+<https://sentry.io/welcome/>
 
-@inject('router')
-@observer
-export default class MainMenu extends React.Component<Props> {
-
-  handleItemClick = (_, { url }: any) => {
-    const { setHistory } = this.props.router!;
-    return setHistory(url);
-  }
-
-  render() {
-    return (
-      <>
-        <div className='nav'>
-          <Menu color='blue' inverted={true} size='large' secondary={true} stackable={true}>
-            {endpoints.filter(x => x.name).map((item, index) => {
-              return <Menu.Item
-                key={index}
-                name={item.path?.toString()}
-                url={item.path!}
-                onClick={this.handleItemClick}>
-                {item.name}
-              </Menu.Item>
-            })}
-          </Menu>
-        </div>
-      </>
-    )
-  }
-
-}
-```
+Crie o projeto lá dentro da plataforma, procue por `Client Keys`, copie o valor `DSN` e 
+anote a variável dentro de um arquivo .env e cole como `REACT_APP_SENTRY_DSN`.
 
 Crie um arquivo dentro de src/plugins
 
@@ -645,30 +791,11 @@ Contendo as informaçãoes do seu Sentry, por exemplo:
 REACT_APP_SENTRY_DSN=https:/batata@o95682.ingest.sentry.io/5266721
 ```
 
-Faça o build do projeto
+Vamos criar o componente de loading, começando pelo css.
 
-```bash
-yarn build
+```text
+src/components/loading/style.css
 ```
-
-Instale o servidor local e habilite o projeto
-
-```bash
-  yarn global add serve
-  serve -s build
-```
-
-Abra o .gitignore
-e apague a linha .env.local
-
-Vamos fazer o deploy na nuvem do projeto
-<https://app.netlify.com/start>
-
-Vamos criar o componente de loading, dentro de
-
-src/components/loading
-
-style.css
 
 ```css
 .loadingWall .loadingCircle {
@@ -710,7 +837,11 @@ style.css
 }
 ```
 
-index.tsx
+Depois o arquivo `index.tsx`
+
+```text
+src/components/loading/index.tsx
+```
 
 ```tsx
 import * as React from 'react';
@@ -756,6 +887,10 @@ crie uma pasta chamada combustivel em src/containers
 
 adicione a store.ts
 
+```text
+./src/containers/combustivel/store.ts
+```
+
 ```ts
 import { action, observable } from 'mobx';
 import swal from 'sweetalert2';
@@ -790,6 +925,10 @@ export default class CombustivelStore {
 
 const combustivel = new CombustivelStore();
 export { combustivel };
+```
+
+```text
+./src/containers/combustivel/index.tsx
 ```
 
 adicione o index.tsx
@@ -868,7 +1007,9 @@ export default class Combustivel extends React.Component<Props>{
 
 Adicione a store no arquivo do mobx
 
-src/mobx/index.ts
+```text
+./src/mobx/index.ts
+```
 
 ```ts
 import { home } from '../containers/home/store';
@@ -883,6 +1024,10 @@ export {
 ```
 
 e deixe as rotas assim:
+
+```text
+./src/routes/endpoints.ts
+```
 
 ```tsx
 import Home from "../containers/home";
@@ -903,5 +1048,26 @@ export const endpoints: EndPointsProps[] = [
   { path: `${publicUrl}/sobre`, name: 'Sobre', component: Sobre, exact: true },
 ];
 ```
+
+## Colocando na internet
+
+Faça o build do projeto
+
+```bash
+yarn build
+```
+
+Instale o servidor local e habilite o projeto
+
+```bash
+  yarn global add serve
+  serve -s build
+```
+
+Abra o .gitignore
+e apague a linha .env.local
+
+Vamos fazer o deploy na nuvem do projeto
+<https://app.netlify.com/start>
 
 [Voltar](./readme.md)
