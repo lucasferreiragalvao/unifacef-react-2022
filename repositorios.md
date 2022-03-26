@@ -17,4 +17,4 @@
 * [Reinaldo de Paula Silveira]()
 * [Thaísa Honorio Morandini]()
 * [Thiago Henrique de Matos]()
-* [Vinicius Manso Carrijo]()
+* [Vinicius Manso Carrijo](https://github.com/ViniciusCarrijo/react-facef)
