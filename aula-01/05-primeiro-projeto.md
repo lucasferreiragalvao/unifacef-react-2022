@@ -834,4 +834,4 @@ export const endpoints: EndPointsProps[] = [
 ];
 ```
 
-[Voltar](../readme.MD)
+[Voltar](./readme.md)
