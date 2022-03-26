@@ -15,6 +15,6 @@
 * [Lucas Lauro Costa]()
 * [Odair Pedroso Junior](https://github.com/odair-pedroso/react-unifacef)
 * [Reinaldo de Paula Silveira](https://github.com/rpsilveira/projeto-react-unifacef)
-* [Thaísa Honorio Morandini]()
+* [Thaísa Honorio Morandini](https://github.com/thaisamorandini89/unifacefreactapp)
 * [Thiago Henrique de Matos](https://github.com/ThiagoHMatos)
 * [Vinicius Manso Carrijo](https://github.com/ViniciusCarrijo/react-facef)
