@@ -16,5 +16,5 @@
 * [Odair Pedroso Junior]()
 * [Reinaldo de Paula Silveira]()
 * [Thaísa Honorio Morandini]()
-* [Thiago Henrique de Matos]()
+* [Thiago Henrique de Matos](https://github.com/ThiagoHMatos)
 * [Vinicius Manso Carrijo]()
