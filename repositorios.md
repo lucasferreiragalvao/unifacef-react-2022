@@ -6,7 +6,7 @@
 * [Bruna Késsia Gonçalves](https://github.com/brugoncalves/unifacef-react-typescript)
 * [David Stefani Prado]()
 * [Edmar Antonio da Costa Junior]()
-* [Hyan Kelwin Souza Campos]()
+* [Hyan Kelwin Souza Campos](https://github.com/hyankelwin/reactjs-typescript-unifacef)
 * [João Marcos Rodrigues Stefani](https://github.com/JoaoStefani/unifacef-react-typescript)
 * [Joyce Ribeiro](https://github.com/riberjoy/unifacef-react-typescript/tree/master)
 * [Leonardo Carloni Rodrigues Meira]()
