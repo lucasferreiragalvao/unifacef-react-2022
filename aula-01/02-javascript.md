@@ -573,4 +573,4 @@ let obj = {
 JSON.stringify(obj);
 ```
 
-[Voltar](../readme.MD)
+[Voltar](./readme.md)
