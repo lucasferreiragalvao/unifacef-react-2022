@@ -7,7 +7,7 @@
 * [David Stefani Prado]()
 * [Edmar Antonio da Costa Junior]()
 * [Hyan Kelwin Souza Campos]()
-* [João Marcos Rodrigues Stefani]()
+* [João Marcos Rodrigues Stefani](https://github.com/JoaoStefani/unifacef-react-typescript)
 * [Joyce Ribeiro]()
 * [Leonardo Carloni Rodrigues Meira]()
 * [Leonardo de Carvalho Neves]()
