@@ -192,11 +192,14 @@ Vamos utilizar nesse projeto como framework CSS o Semantic UI
 
 Seus componentes são bem customizáveis
 
+---
+
 Após isso, crie uma conta na plataforma Sentry.
 
 <https://sentry.io/welcome/>
 
-Anote a variável dentro de um arquivo .env e cole como `REACT_APP_SENTRY_DSN`.
+Crie o projeto lá dentro, procue por `Client Keys`, copie o valor `DSN` e 
+anote a variável dentro de um arquivo .env e cole como `REACT_APP_SENTRY_DSN`.
 
 Altere o arquivo App.tsx
 
