@@ -123,7 +123,7 @@ Seu package.json deve ficar assim:
 
 Vamos separar as dependências do projeto das que são de dev das quais não são.
 
-```
+```json
 {
   "name": "unifacef-react-typescript",
   "version": "0.1.0",
