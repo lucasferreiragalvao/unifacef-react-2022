@@ -9,7 +9,7 @@
 * [Hyan Kelwin Souza Campos]()
 * [João Marcos Rodrigues Stefani]()
 * [Joyce Ribeiro]()
-* [Leonardo Carloni Rodrigues Meira]()
+* [Leonardo Carloni Rodrigues Meira](https://github.com/LeoCarloni/unifacef-react-typescript)
 * [Leonardo de Carvalho Neves]()
 * [Lucas Ferreira Galvão]()
 * [Lucas Lauro Costa]()
