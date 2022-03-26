@@ -511,9 +511,13 @@ Dentro da store deixe assim:
 
 ```ts
 import { getPrice } from './../../apis/economy.api';
-import { action, observable } from 'mobx';
+import { action, makeAutoObservable, observable } from 'mobx';
 
 export default class HomeStore {
+  constructor() {
+    makeAutoObservable(this)
+  }
+
   @observable records: any[] = [];
 
   @action buildRecords = async () => {
@@ -892,10 +896,14 @@ adicione a store.ts
 ```
 
 ```ts
-import { action, observable } from 'mobx';
+import { action, makeAutoObservable, observable } from 'mobx';
 import swal from 'sweetalert2';
 
 export default class CombustivelStore {
+  constructor() {
+    makeAutoObservable(this)
+  }
+  
   @observable etanol = 0;
   @observable gasolina = 0;
 
