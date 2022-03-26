@@ -3,7 +3,7 @@
 * [Alessandro Rodrigues da Silva]()
 * [Andre Luiz Gonçalves Silva]()
 * [Anilton Francisco de Morais Junior]()
-* [Bruna Késsia Gonçalves]()
+* [Bruna Késsia Gonçalves](https://github.com/brugoncalves/unifacef-react-typescript)
 * [David Stefani Prado]()
 * [Edmar Antonio da Costa Junior]()
 * [Hyan Kelwin Souza Campos]()
