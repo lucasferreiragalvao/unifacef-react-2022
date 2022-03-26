@@ -14,7 +14,7 @@
 * [Lucas Ferreira Galvão]()
 * [Lucas Lauro Costa]()
 * [Odair Pedroso Junior]()
-* [Reinaldo de Paula Silveira]()
+* [Reinaldo de Paula Silveira](https://github.com/rpsilveira/projeto-react-unifacef)
 * [Thaísa Honorio Morandini]()
 * [Thiago Henrique de Matos]()
 * [Vinicius Manso Carrijo]()
