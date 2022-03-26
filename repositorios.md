@@ -17,4 +17,4 @@
 * [Reinaldo de Paula Silveira](https://github.com/rpsilveira/projeto-react-unifacef)
 * [Thaísa Honorio Morandini]()
 * [Thiago Henrique de Matos](https://github.com/ThiagoHMatos)
-* [Vinicius Manso Carrijo]()
+* [Vinicius Manso Carrijo](https://github.com/ViniciusCarrijo/react-facef)
