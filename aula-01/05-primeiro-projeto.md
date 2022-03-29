@@ -88,84 +88,11 @@ E modifiquem o conteúdo em texto e deixem a página recarregar.
 Vamos agora adicionar novas dependencias aos projeto
 
 ```bash
-npm install react@16.8.0 react-dom@16.8.0 axios history@4.10.1 jsonwebtoken semantic-ui-css semantic-ui-react sweetalert2 @sentry/browser lodash mobx-react-router react-router-dom@5.3.0 sweetalert2 @types/react-router-dom@5.3.3 @types/history@4.7.6 @types/lodash @types/node
-```
-
-```bash
-npm install mobx-react@6.2.2
-```
-
-```bash
-npm install mobx@5.0.0
+npm install axios history@4.10.1 jsonwebtoken semantic-ui-react sweetalert2 @sentry/browser lodash react-router-dom@5.3.0 sweetalert2 @types/react-router-dom@5.3.3 @types/history@4.7.6 @types/lodash @types/node mobx-react mobx mobx-react-router -f
 ```
 
 Ajustar dependencias no `package.json`, separar o que é dependência de desenvolvimento e de projeto.
 
-Seu package.json deve ficar assim:
-
-```json
-{
-  "name": "unifacef-react-typescript",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@sentry/browser": "^6.19.2",
-    "@testing-library/jest-dom": "^5.16.3",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/history": "^4.7.6",
-    "@types/jest": "^27.4.1",
-    "@types/lodash": "^4.14.180",
-    "@types/node": "^17.0.23",
-    "@types/react": "^17.0.43",
-    "@types/react-dom": "^17.0.14",
-    "@types/react-router-dom": "^5.3.3",
-    "axios": "^0.26.1",
-    "history": "^4.10.1",
-    "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.21",
-    "mobx": "^5.0.0",
-    "mobx-react": "^6.2.2",
-    "mobx-react-router": "^4.1.0",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "5.0.0",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.1.2",
-    "sweetalert2": "^11.4.7",
-    "typescript": "^4.6.3",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
-}
-```
-
-Vamos separar as dependências do projeto das que são de dev das quais não são.
-
 ```json
 {
   "name": "unifacef-react-typescript",
@@ -177,30 +104,28 @@ Vamos separar as dependências do projeto das que são de dev das quais não sã
     "history": "^4.10.1",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
-    "mobx": "^5.0.0",
-    "mobx-react": "^6.2.2",
+    "mobx": "^6.5.0",
+    "mobx-react": "^7.3.0",
     "mobx-react-router": "^4.1.0",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "5.0.0",
-    "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.1.2",
-    "sweetalert2": "^11.4.7",
-    "typescript": "^4.6.3",
+    "sweetalert2": "^11.4.8",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "@types/history": "^4.7.6",
     "@types/jest": "^27.4.1",
-    "@types/lodash": "^4.14.180",
-    "@types/node": "^17.0.23",
+    "@types/lodash": "^4.14.181",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/node": "^16.11.26",
+    "typescript": "^4.6.3",
     "@types/react": "^17.0.43",
-    "@types/react-dom": "^17.0.14",
-    "@types/react-router-dom": "^5.3.3"
+    "@types/react-dom": "^17.0.14"
   },
   "scripts": {
     "start": "react-scripts start",
