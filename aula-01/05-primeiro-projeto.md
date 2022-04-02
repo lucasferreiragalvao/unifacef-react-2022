@@ -397,7 +397,6 @@ import { Provider } from 'mobx-react';
 import { router } from './mobx/';
 import { Router } from 'react-router-dom';
 import { syncHistoryWithStore } from 'mobx-react-router';
-import 'semantic-ui-css/semantic.min.css';
 
 const rootElement = document.getElementById('root');
 const browserHistory = createBrowserHistory();
@@ -416,7 +415,55 @@ ReactDOM.render(
 );
 ```
 
+Cria um arquivo nessa localização
+
+```text
+./src/mobx/index.ts
+```text
+
+```
+import { router } from './router.store';
+export { router };
 ---
+
+Agora crie outro em:
+
+```text
+./src/routes/index.tsx
+```
+
+```
+import * as React from 'react';
+import { observer } from 'mobx-react';
+import {
+  Route,
+  withRouter,
+  Switch,
+} from 'react-router-dom';
+import MainMenu from '../components/main-menu';
+import { Divider } from 'semantic-ui-react';
+import { endpoints } from './endpoints';
+
+// @ts-ignore
+@withRouter
+@observer
+export default class Routes extends React.Component {
+
+  render() {
+    return (
+      <>
+        <MainMenu />
+        <Divider hidden={true} />
+        <Switch>
+          {endpoints.map((route, i) => (
+            <Route key={i} {...route} />)
+          )}
+        </Switch>
+      </>
+    );
+  }
+}
+```
 
 Dentro de apis crie o arquivo `economy.api.ts`
 
