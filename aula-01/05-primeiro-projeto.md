@@ -419,11 +419,13 @@ Cria um arquivo nessa localização
 
 ```text
 ./src/mobx/index.ts
-```text
+```
 
 ```
 import { router } from './router.store';
 export { router };
+```
+
 ---
 
 Agora crie outro em:
