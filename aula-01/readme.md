@@ -36,3 +36,4 @@
 * <https://app.netlify.com/>
 * <https://thisdavej.com/right-click-on-windows-folder-and-open-with-visual-studio-code/>
 * <http://json2ts.com/>
+* <https://carreiras.magazineluiza.com.br/vagas/215150-desenvolvedor-a-backend-pleno>
