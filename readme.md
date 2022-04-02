@@ -17,4 +17,4 @@
 ## Vagas
 
 * <https://carreiras.magazineluiza.com.br/vagas/215150*desenvolvedor-a-backend-pleno>
-* <https://carreiras.magazineluiza.com.br/vagas/*
+* <https://carreiras.magazineluiza.com.br/vagas/>
