@@ -582,6 +582,45 @@ export default class Home extends React.Component<Props> {
 
 ---
 
+Vamos criar o endpoint da home
+
+```text
+./src/routes/endpoints.ts
+```
+
+```ts
+import Home from '../containers/home';
+import { RouteProps } from 'react-router-dom';
+
+const publicUrl = process.env.PUBLIC_URL;
+
+interface EndPointsProps extends RouteProps {
+  name?: string
+}
+
+export const endpoints: EndPointsProps[] = [
+  { path: `${publicUrl}/`, component: Home, exact: true },
+  { path: `${publicUrl}/home`, name: 'Home', component: Home, exact: true },
+];
+```
+---
+
+Agora em
+```text
+./src/mobx/index
+```
+
+```ts
+import { router } from './router.store';
+import { home } from '../containers/home/store';
+
+export {
+  router,
+  home,
+}
+```
+
+---
 
 Vamos criar o componente de loading, começando pelo css.
 
