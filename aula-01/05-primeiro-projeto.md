@@ -734,9 +734,9 @@ axios.interceptors.request.use(async (config) => {
 });
 
 
-axios.interceptors.response.use(async (config) => {
+axios.interceptors.response.use(async (response) => {
   loadingOff();
-  return config;
+  return response;
 }, (error) => {
   loadingOff();
   return Promise.reject(error);
@@ -754,6 +754,11 @@ Adicione a seguinte linha no topo do arquivo:
 
 ```
 import './apis/axios.api';
+```
+E em baixo lá no render
+
+```
+<Loading/>
 ```
 ---
 
