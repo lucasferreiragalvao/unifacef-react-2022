@@ -580,6 +580,144 @@ export default class Home extends React.Component<Props> {
 }
 ```
 
+---
+
+
+Vamos criar o componente de loading, começando pelo css.
+
+```text
+src/components/loading/style.css
+```
+
+```css
+.loadingWall .loadingCircle {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  overflow: show;
+  margin: auto;
+  border-radius: 80%;
+  border-bottom: 13px solid #e25335;
+  border-top: 13px solid #2185d0;
+  border-left:13px solid green;
+  border-right:13px solid #fb9600 ;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 0.5s linear infinite;
+  box-shadow: 0px 0.3px 4px 0px black;
+
+}
+
+.loadingWall {
+  content: "";
+  bottom: 0;
+  background: #fff9;
+  z-index: 999999;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+```
+
+Depois o arquivo `index.tsx`
+
+```text
+src/components/loading/index.tsx
+```
+
+```tsx
+import * as React from 'react';
+import './style.css';
+
+export default class Loading extends React.Component {
+  render() {
+    return (
+      <div id='loadingSpinner' className='loadingWall' data-requests='0'>
+        <div className='loadingCircle' />
+      </div>);
+  }
+}
+
+export const loadingOn = () => {
+  const el = (document.querySelector('#loadingSpinner')) as any;
+  if (el === null) {
+    return;
+  }
+
+  el.style.display = 'block';
+  el.setAttribute('data-requests', Number(el.getAttribute('data-requests')) + 1);
+};
+
+export const loadingOff = () => {
+  const el = (document.querySelector('#loadingSpinner')) as any;
+  if (el === null) {
+    return;
+  }
+  if (Number(el.getAttribute('data-requests')) > 0) {
+    el.setAttribute('data-requests', Number(el.getAttribute('data-requests')) - 1);
+  }
+
+  if (Number(el.getAttribute('data-requests')) === 0) {
+    el.style.display = 'none';
+    return;
+  }
+
+};
+```
+
+Crie um arquivo chamado
+
+```text
+./src/apis/axios.api.ts
+```
+
+Dentro coloque:
+
+```
+import { loadingOn, loadingOff } from '../components/loading';
+import axios from 'axios';
+
+axios.interceptors.request.use(async (config) => {
+  loadingOn();
+  return config;
+}, (error) => {
+  return Promise.reject(error);
+});
+
+
+axios.interceptors.response.use(async (config) => {
+  loadingOff();
+  return config;
+}, (error) => {
+  loadingOff();
+  return Promise.reject(error);
+});
+
+```
+
+No arquivo
+
+```
+./src/index.tsx
+```
+
+Adicione a seguinte linha no topo do arquivo:
+
+```
+import './apis/axios.api';
+```
+---
+
 Crie uma nova pasta dentro de containers chamada `sobre`
 
 Adicione um arquivo index.tsx dentro dela
@@ -777,97 +915,6 @@ Contendo as informaçãoes do seu Sentry, por exemplo:
 REACT_APP_SENTRY_DSN=https:/batata@o95682.ingest.sentry.io/5266721
 ```
 
-Vamos criar o componente de loading, começando pelo css.
-
-```text
-src/components/loading/style.css
-```
-
-```css
-.loadingWall .loadingCircle {
-  position: fixed;
-  z-index: 999999;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  overflow: show;
-  margin: auto;
-  border-radius: 80%;
-  border-bottom: 13px solid #e25335;
-  border-top: 13px solid #2185d0;
-  border-left:13px solid green;
-  border-right:13px solid #fb9600 ;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 0.5s linear infinite;
-  box-shadow: 0px 0.3px 4px 0px black;
-
-}
-
-.loadingWall {
-  content: "";
-  bottom: 0;
-  background: #fff9;
-  z-index: 999999;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  display: none;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-```
-
-Depois o arquivo `index.tsx`
-
-```text
-src/components/loading/index.tsx
-```
-
-```tsx
-import * as React from 'react';
-import './style.css';
-
-export default class Loading extends React.Component {
-  render() {
-    return (
-      <div id='loadingSpinner' className='loadingWall' data-requests='0'>
-        <div className='loadingCircle' />
-      </div>);
-  }
-}
-
-export const loadingOn = () => {
-  const el = (document.querySelector('#loadingSpinner')) as any;
-  if (el === null) {
-    return;
-  }
-
-  el.style.display = 'block';
-  el.setAttribute('data-requests', Number(el.getAttribute('data-requests')) + 1);
-};
-
-export const loadingOff = () => {
-  const el = (document.querySelector('#loadingSpinner')) as any;
-  if (el === null) {
-    return;
-  }
-  if (Number(el.getAttribute('data-requests')) > 0) {
-    el.setAttribute('data-requests', Number(el.getAttribute('data-requests')) - 1);
-  }
-
-  if (Number(el.getAttribute('data-requests')) === 0) {
-    el.style.display = 'none';
-    return;
-  }
-
-};
-```
 
 crie uma pasta chamada combustivel em src/containers
 
